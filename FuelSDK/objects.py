@@ -179,8 +179,8 @@ class ET_DataExtension(ET_CUDSupport):
 class ET_DataExtension_Column(ET_GetSupport):
     def __init__(self):
         super(ET_DataExtension_Column, self).__init__()
-        self.obj = 'DataExtensionField'
-        
+        self.obj_type = 'DataExtensionField'
+
     def get(self):
         '''
         if props and props.is_a? Array then
